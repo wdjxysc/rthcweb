@@ -7,27 +7,39 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>气表管理</title>
-  </head>
-  <body>
-    <h>集中器</h>
+</head>
+<body>
+<h1>集中器</h1>
 
-    <h1>集中器ssss</h1>
-
-    <table border="1"
-            bgcolor="aqua">
-      <tr>
-        <td> <a href=# onclick="show();"/> </td>
-        <td>row 1, cell 2</td>
-      </tr>
-      <tr>
-        <td>row 2, cell 1</td>
-        <td>row 2, cell 2</td>
-      </tr>
+<div style="float: left">
+    <table border="1" bgcolor="#ff7f50" style="align-content: center">
+        <tr>
+            <td>
+                <button type="button">Click Me!</button>
+            </td>
+        </tr>
+        <tr>
+            <td>row 2, cell 1</td>
+        </tr>
     </table>
+</div>
 
-  </body>
+<div style="float: inherit">
 
+    <table border="1" bgcolor="#ffe4c4" style="align-content: center">
+        <tr>
+            <td>
+                <button type="button">Click Me!</button>
+            </td>
+        </tr>
+        <tr>
+            <td>row 2, cell 1</td>
+        </tr>
+    </table>
+</div>
+
+</body>
 
 </html>
