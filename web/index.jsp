@@ -5,7 +5,8 @@
   Time: 15:39
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" errorPage="/ErrorPage/error.jsp" language="java" %>
+
 <html>
 <head>
     <title>气表管理</title>
@@ -39,6 +40,11 @@
         </tr>
     </table>
 </div>
+
+<%
+    //这行代码肯定会出错，因为除数是0，一运行就会抛出异常
+    int x = 1 / 0;
+%>
 
 </body>
 

@@ -12,12 +12,12 @@ public class Client {
 
     HelloWorld.TestClass testClass;
 
-    public Client(HelloWorld.SocketChanged socketChanged, HelloWorld.TestClass testClass){
+    public Client(HelloWorld.SocketChanged socketChanged, HelloWorld.TestClass testClass) {
         this.socketChanged = socketChanged;
         this.testClass = testClass;
     }
 
-    void receiveData(Socket socket){
+    void receiveData(Socket socket) {
         try {
             InputStream inputStream = socket.getInputStream();
 
@@ -33,7 +33,7 @@ public class Client {
                 byte[] data = new byte[dataCount];
                 int read = inputStream.read(data);
 
-                if(data[0] == 0x02){
+                if (data[0] == 0x02) {
                     //socketChanged.changed(socket, false);
                     //testClass.changed(socket,false);
                     testClass.sockets.remove(0);
@@ -42,7 +42,7 @@ public class Client {
 
                 System.out.println("read---" + read + "   " + Tools.Bytes2HexString(data, data.length));
             }
-        }catch (Exception ex){
+        } catch (Exception ex) {
 
         }
     }
