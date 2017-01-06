@@ -17,7 +17,7 @@ public class UserDaoImpl implements IUserDao {
     public User find(String userName, String userPwd) {
         try {
             Document document = XmlUtils.getDocument();
-            //使用XPath表达式来操作XML节点
+            //浣跨敤XPath琛ㄨ揪寮忔潵鎿嶄綔XML鑺傜偣
             Element e = (Element) document.selectSingleNode("//user[@userName='" + userName + "' and @userPwd='" + userPwd + "']");
             if (e == null) {
                 return null;
@@ -44,7 +44,7 @@ public class UserDaoImpl implements IUserDao {
         try {
             Document document = XmlUtils.getDocument();
             Element root = document.getRootElement();
-            Element user_node = root.addElement("user");  //创建user结点，并挂到root
+            Element user_node = root.addElement("user");  //鍒涘缓user缁撶偣锛屽苟鎸傚埌root
             user_node.setAttributeValue("id", user.getId());
             user_node.setAttributeValue("userName", user.getUserName());
             user_node.setAttributeValue("userPwd", user.getUserPwd());
