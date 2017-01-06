@@ -7,27 +7,27 @@ import domain.User;
  */
 public interface IUserDao {
     /**
-     * ¸ù¾İÓÃ»§ÃûºÍÃÜÂëÀ´²éÕÒÓÃ»§
+     * æ ¹æ®ç”¨æˆ·åå’Œå¯†ç æ¥æŸ¥æ‰¾ç”¨æˆ·
      *
      * @param userName
      * @param userPwd
-     * @return ²éµ½µ½µÄÓÃ»§
+     * @return æŸ¥åˆ°åˆ°çš„ç”¨æˆ·
      */
     User find(String userName, String userPwd);
 
 
     /**
-     * Ìí¼ÓÓÃ»§
+     * æ·»åŠ ç”¨æˆ·
      *
      * @param user
      */
     void add(User user);
 
     /**
-     * ¸ù¾İÓÃ»§ÃûÀ´²éÕÒÓÃ»§
+     * æ ¹æ®ç”¨æˆ·åæ¥æŸ¥æ‰¾ç”¨æˆ·
      *
      * @param userName
-     * @return ²éµ½µ½µÄÓÃ»§
+     * @return æŸ¥åˆ°åˆ°çš„ç”¨æˆ·
      */
     User find(String userName);
 }

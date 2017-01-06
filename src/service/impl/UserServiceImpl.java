@@ -18,8 +18,8 @@ public class UserServiceImpl implements IUserService {
         if (userDao.find(user.getUserName()) != null) {
             //checked exception
             //unchecked exception
-            //ÕâÀïÅ×±àÒëÊ±Òì³£µÄÔ­Òò£ºÊÇÎÒÏëÉÏÒ»²ã³ÌĞò´¦ÀíÕâ¸öÒì³££¬ÒÔ¸øÓÃ»§Ò»¸öÓÑºÃÌáÊ¾
-            throw new UserExistException("×¢²áµÄÓÃ»§ÃûÒÑ´æÔÚ£¡£¡£¡");
+            //è¿™é‡ŒæŠ›ç¼–è¯‘æ—¶å¼‚å¸¸çš„åŸå› ï¼šæ˜¯æˆ‘æƒ³ä¸Šä¸€å±‚ç¨‹åºå¤„ç†è¿™ä¸ªå¼‚å¸¸ï¼Œä»¥ç»™ç”¨æˆ·ä¸€ä¸ªå‹å¥½æç¤º
+            throw new UserExistException("æ³¨å†Œçš„ç”¨æˆ·åå·²å­˜åœ¨ï¼ï¼ï¼");
         }
         userDao.add(user);
     }

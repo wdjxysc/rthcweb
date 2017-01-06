@@ -8,15 +8,15 @@ import java.util.Date;
  */
 public class User implements Serializable {
     private static final long serialVersionUID = -4313782718477229465L;
-    // ÓÃ»§ID
+    // ç”¨æˆ·ID
     private String id;
-    // ÓÃ»§Ãû
+    // ç”¨æˆ·å
     private String userName;
-    // ÓÃ»§ÃÜÂë
+    // ç”¨æˆ·å¯†ç 
     private String userPwd;
-    // ÓÃ»§ÓÊÏä
+    // ç”¨æˆ·é‚®ç®±
     private String email;
-    // ÓÃ»§ÉúÈÕ
+    // ç”¨æˆ·ç”Ÿæ—¥
     private Date birthday;
 
     public Date getBirthday() {

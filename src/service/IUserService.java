@@ -8,7 +8,7 @@ import exception.UserExistException;
  */
 public interface IUserService {
     /**
-     * 提供注册服务
+     * 鎻愪緵娉ㄥ唽鏈嶅姟
      *
      * @param user
      * @throws UserExistException
@@ -16,7 +16,7 @@ public interface IUserService {
     void registerUser(User user) throws UserExistException;
 
     /**
-     * 提供登录服务
+     * 鎻愪緵鐧诲綍鏈嶅姟
      *
      * @param userName
      * @param userPwd
